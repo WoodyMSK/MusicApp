@@ -100,10 +100,12 @@ class FeedFragment : Fragment() {
 
 
             if (!mediaObserver.player!!.isPlaying) {
+
                 mediaObserver.player!!.start()
                 mediaObserver.fabPlayAlbum = binding.fabPlayAlbumXML
                 return@setOnClickListener
             } else {
+
                 mediaObserver.player!!.pause()
                 mediaObserver.fabPlayAlbum = binding.fabPlayAlbumXML
                 return@setOnClickListener
